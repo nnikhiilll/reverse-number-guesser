@@ -1,0 +1,22 @@
+# main.py
+low=1
+high=100
+number=0
+while True:
+  guess=(low+high)//2
+  if number==6:
+    print("Your number is "+str(guess))
+    break
+  ask=input("Is you number "+str(guess)+"? If not, is it above or below "+str(guess)+"? (Type 'yes','above',' or 'below') below: ")
+  if ask=='yes':
+    print("Your number is "+str(guess)+"!")
+    break
+  if ask=='above':
+    low=guess+1
+    number+=1
+  if ask=='below':
+    high=guess-1
+    number+=1
+  
+  
+    
